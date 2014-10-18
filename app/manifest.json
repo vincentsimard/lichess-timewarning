@@ -1,8 +1,8 @@
 {
     "name": "lichess-timewarning",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "manifest_version": 2,
-    "description": "Adds a time warning audio sample to lichess.org",
+    "description": "Warns lichess.org players when they are low on time with an audio sample",
     "icons": {
         "16": "images/icon-16.png",
         "128": "images/icon-128.png"
