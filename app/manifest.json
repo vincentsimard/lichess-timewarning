@@ -1,0 +1,34 @@
+{
+    "name": "lichess-timewarning",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Adds a time warning audio sample to lichess.org",
+    "icons": {
+        "16": "images/icon-16.png",
+        "128": "images/icon-128.png"
+    },
+    "default_locale": "en",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*.lichess.org/*",
+                "https://*.lichess.org/*"
+            ],
+            "css": [
+                "styles/main.css"
+            ],
+            "js": [
+                "bower_components/jquery/dist/jquery.min.js",
+                "scripts/lichess-timewarning.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": false
+        }
+    ],
+    "web_accessible_resources": [
+        "ogg/*"
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
