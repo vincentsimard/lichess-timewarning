@@ -21,6 +21,8 @@ var makeAudio = function(file, volume) {
 var timeWarning = function() {
   var audio = makeAudio('Lowtime.wav', 1);
   audio.play();
+
+  timeWarning = function() {};
 };
 
 var handleMutation = function(mutations) {
