@@ -18,7 +18,6 @@
                 "styles/main.css"
             ],
             "js": [
-                "bower_components/jquery/dist/jquery.min.js",
                 "scripts/lichess-timewarning.js"
             ],
             "run_at": "document_end",
