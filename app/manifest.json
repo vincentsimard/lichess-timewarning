@@ -1,6 +1,6 @@
 {
     "name": "lichess-timewarning",
-    "version": "0.0.1",
+    "version": "0.1.1",
     "manifest_version": 2,
     "description": "Adds a time warning audio sample to lichess.org",
     "icons": {
