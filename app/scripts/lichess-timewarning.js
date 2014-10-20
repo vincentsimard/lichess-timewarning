@@ -3,7 +3,7 @@
 var lichess = {};
 
 lichess.el = document.querySelector('#lichess');
-lichess.elTable = lichess.el.querySelector('.lichess_table');
+lichess.elTable = lichess.el.querySelector('.lichess_ground .table');
 lichess.elBoard = lichess.el.querySelector('.lichess_board');
 lichess.elPlayerClock = lichess.el.querySelector('.clock_bottom');
 
@@ -38,6 +38,7 @@ var handleMutation = function(mutations) {
 };
 
 var init = function() {
+  // @TODO: Only play sound for games being played (not spectating)
   if (!lichess.elPlayerClock) { return; }
 
   var emergObserver = new MutationObserver(handleMutation);
